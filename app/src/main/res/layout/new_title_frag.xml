@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="@drawable/title"
+        >
+    <ImageView
+        android:id="@+id/headImage"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:scaleType="fitXY"
+        android:background="@drawable/hq1"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        />
+
+       <TextView
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:text="休闲中心"
+            android:textColor="@color/white"
+            android:textSize="70px"
+
+            />
+
+        <TextView
+            android:id="@+id/counter"
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:textSize="70px"
+
+            />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white"
+        android:scrollbars="none" >
+
+
+        <LinearLayout
+            android:id="@+id/forecast_layout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/hot"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:text="热点新闻"/>
+            <TextView
+                android:id="@+id/musicTitle"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:text="音乐放松"/>
+            <TextView
+                android:id="@+id/read"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:text="名著阅读"/>
+            <TextView
+                android:id="@+id/videos"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:text="小视频"/>
+            <TextView
+                android:id="@+id/healthy"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:text="健康"/>
+
+            <TextView
+                android:id="@+id/weizhi"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:text="获取您的位置信息"/>
+
+
+
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"/>
+
+
+    <LinearLayout
+        android:layout_marginLeft="40dp"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="200dp" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+<!--
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/friend"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:background="@drawable/hq"
+            />-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/news_title_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+
+        />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

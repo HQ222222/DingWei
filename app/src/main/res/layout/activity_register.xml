@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity"
+    android:background="@drawable/re">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册界面"
+        android:gravity="center"
+        android:textSize="80px"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="300px"
+            android:layout_height="100px"
+            android:text="用户名:"
+            android:layout_gravity="center"
+            android:textSize="50px"
+                />
+        <EditText
+            android:id="@+id/rg_account"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:textSize="50px"
+            android:background="@drawable/edit_background"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="300px"
+            android:layout_height="100px"
+            android:text="密  码:"
+            android:layout_gravity="center"
+            android:textSize="50px"
+            />
+            <EditText
+                android:id="@+id/rg_password"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:textSize="50px"
+                android:layout_gravity="center"
+                android:background="@drawable/edit_background"
+                />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="300px"
+            android:layout_height="100px"
+            android:text="确认密码:"
+            android:layout_gravity="center"
+            android:textSize="50px"
+            />
+        <EditText
+            android:id="@+id/ag_password"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:textSize="50px"
+            android:layout_gravity="center"
+            android:background="@drawable/edit_background"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/register"
+        android:layout_marginTop="20dp"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_yuan"
+        android:layout_marginLeft="60px"
+        android:text="注册" />
+
+</LinearLayout>
